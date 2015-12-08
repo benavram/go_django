@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block jquery %}
+$('.goback').click(function(){
+    parent.history.back();
+    return false;
+});
+{% endblock %}
+{% block content %}
+<!-- PAGE CONTENT -->
+<div class="container">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+
+      <h2>Awwww  SNAP, you got an error (404) !</h2>
+          </div>
+             <div class="clearfix"></div>
+            <div class="col-lg-8  col-lg-offset-2">
+            </div>
+            <div class="clearfix"></div>
+            <br /><br />
+          <p class="text-muted">please <a href="#" class="goback" >go back</a> or try again later. </p>
+          <div class="clearfix"></div>
+             <br /><br />
+                <div class="col-lg-6 col-lg-offset-3">
+                </div>
+            <div class="clearfix"></div>
+            <br />
+                <div class="col-lg-6  col-lg-offset-3">
+      <div class="btn-group btn-group-justified">
+                      <a href="#" class="btn btn-success btn-lg  goback">go back</a>
+      </div>
+
+                </div>
+
+        </div>
+
+
+        </div>
+      <!-- END PAGE CONTENT -->
+{% endblock %}
